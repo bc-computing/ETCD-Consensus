@@ -1,0 +1,15 @@
+syntax = "proto3";
+package rabia_rpc;
+
+option go_package = "./rabia_rpc";
+
+service Node {
+  rpc Read(ReadRequest) returns (ReadResponse) {}
+}
+
+message ReadRequest {
+  uint64 slot = 1;
+}
+message ReadResponse {
+  bytes value = 2;
+}
