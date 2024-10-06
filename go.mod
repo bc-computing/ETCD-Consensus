@@ -1,3 +1,3 @@
 module cons-alg
 
-go 1.21
+go 1.19.4
